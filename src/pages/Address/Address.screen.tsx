@@ -139,10 +139,6 @@ const Address = () => {
       complemento: Yup.string()
         .min(3, "Complemento precisa conter alguma coisa mais especifica.")
         .max(50, "Complemento muito extenso"),
-      bairro: Yup.string()
-        .min(3, "Nome do bairro muito curto")
-        .max(50, "Nome do bairro muito extenso")
-        .required(msgRequired),
       localidade: Yup.string()
         .min(3, "Nome da cidade muito curta.")
         .max(50, "Nome da cidade muito extensa.")
